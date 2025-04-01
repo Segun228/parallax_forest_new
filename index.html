@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Amazing</title>
+
+    <link rel="stylesheet" href="./../styles/main.css">
+    <script src="./libs/gsap/gsap.min.js" defer></script>
+    <script src="./libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="./libs/gsap/ScrollSmoother.min.js" defer></script>
+    <script src="./scripts/app.js" defer></script>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="content">
+            <header class="main-header">
+                <div class="layers">
+                    <div class="layers-header rellax" data-rellax-speed="-3.2">
+                        <div class="layers-caption">Wellcome to the</div>
+                        <div class="layers-title">Crimean forest</div>
+                    </div>
+                    <div class="layer layers-base rellax" data-rellax-speed="-8.2" style="background-image: url(./../img/layer-base.png);"></div>
+                    <div class="layer layers-middle rellax" data-rellax-speed="-4.6" style="background-image: url(./../img/layer-middle.png);"></div>
+                    <div class="layer layers-front rellax" data-rellax-speed="-1" style="background-image: url(./../img/layer-front.png);"></div>
+                </div>
+            </header>
+            
+            <article class="main-article" style="background-image: url(./../img/dungeon.jpg);">
+                <div class="main-article-content rellax" data-rellax-speed="2">
+                    <h2 class="main-article-header">To be continued</h2>
+                    <p class="main-article-paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae itaque quo nobis quos, minima officiis perspiciatis distinctio repudiandae dolorum dolore corrupti quidem dolores esse error numquam! Eius quam eligendi labore atque facere.</p>
+                </div>
+                <div class="copy">©dianabol_metandienon_enjoyer</div>
+            </article>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+    <script>
+        var rellax = new Rellax('.layer'); 
+    </script>
+    <script>
+        var rellax = new Rellax('.layers-header'); 
+    </script>
+    <script>
+        var rellax = new Rellax('.main-article-content'); 
+    </script>
+</body>
+</html>
